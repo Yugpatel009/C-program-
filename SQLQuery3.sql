@@ -83,4 +83,13 @@ end
 
 --3.9--
 
-declare @marks int
+declare @mark int
+set @mark=15
+if(@mark > 70 )
+print '1st class'
+else if (@mark>50 and @mark<=70)
+print '2nd class'
+else if (@mark>=35 and @mark<=50)
+print '3rd class'
+else if (@mark<35)
+print 'Fail'
